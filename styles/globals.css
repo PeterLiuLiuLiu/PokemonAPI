@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	h1 {
+		@apply text-6xl font-bold pt-10 pb-5 capitalize text-center;
+	}
+}
