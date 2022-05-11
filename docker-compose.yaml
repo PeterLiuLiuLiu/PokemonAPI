@@ -1,0 +1,8 @@
+services:
+  pokemon-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: peterliuliu/pokemon-image:v0
+    ports:
+      - "3000:3000"

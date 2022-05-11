@@ -21,7 +21,7 @@ export default function PokemonDetail(pokemon) {
 				<span>{pokemon.height}</span>
 				<p className="text-3xl pt-10">Type:</p>
 				{types.map((type) => (
-					<p>{type}</p>
+					<p key={pokemon.id}>{type}</p>
 				))}
 				<button
 					onClick={clickHomeHandler}

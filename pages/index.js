@@ -1,5 +1,5 @@
 import Layout from "../components/Layouts";
-import Link from "next/Link";
+import Link from "next/link";
 
 const url = "https://pokeapi.co/api/v2/pokemon?limit=20/";
 
@@ -9,7 +9,7 @@ export default function Home({ pokemons }) {
 			<h1>Hello Pokemon!</h1>
 			<ul>
 				{pokemons.map((pokemon, index) => (
-					<li>
+					<li key={index + 1}>
 						<Link href={`/pokemon/${index + 1}`}>
 							<a className="bg-yellow-300 border-2 border-black flex flex-1 items-center mb-5 p-0 hover:drop-shadow-2xl">
 								<img
